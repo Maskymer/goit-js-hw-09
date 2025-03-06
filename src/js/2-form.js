@@ -6,6 +6,14 @@ const formData = {
 
 const form = document.querySelector('.feedback-form');  
 
+
+form.style.display = 'flex';  
+form.style.flexDirection = 'column'; 
+form.style.width = '360px';
+form.style.gap = '10px';
+form.style.padding = '20px';
+form.style.margin = 'auto';  
+
 const savedData = JSON.parse(localStorage.getItem('feedback-form-state'));  
 if (savedData) {  
     formData.email = savedData.email || "";  
